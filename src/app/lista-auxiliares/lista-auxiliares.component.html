@@ -1,0 +1,17 @@
+<h2>Lista de Auxiliares</h2>
+<table border="1">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Apellido</th>
+      <th>Correo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let auxiliar of auxiliares">
+      <td>{{ auxiliar.nombre }}</td>
+      <td>{{ auxiliar.apellido }}</td>
+      <td>{{ auxiliar.correo }}</td>
+    </tr>
+  </tbody>
+</table>

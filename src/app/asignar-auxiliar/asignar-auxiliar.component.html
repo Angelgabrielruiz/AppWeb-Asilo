@@ -1,0 +1,18 @@
+<h2>Asignar Auxiliar a Paciente</h2>
+<form (ngSubmit)="asignarAuxiliar()">
+  <label for="auxiliar">Selecciona un Auxiliar:</label>
+  <select [(ngModel)]="selectedAuxiliarId" name="auxiliar" required>
+    <option *ngFor="let auxiliar of auxiliares" [value]="auxiliar.id">
+      {{ auxiliar.nombre }} {{ auxiliar.apellido }}
+    </option>
+  </select>
+
+  <label for="paciente">Selecciona un Paciente:</label>
+  <select [(ngModel)]="selectedPacienteId" name="paciente" required>
+    <option *ngFor="let paciente of pacientes" [value]="paciente.id">
+      {{ paciente.nombre }} {{ paciente.apellido }}
+    </option>
+  </select>
+
+  <button type="submit">Asignar</button>
+</form>

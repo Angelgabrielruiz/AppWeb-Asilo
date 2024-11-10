@@ -1,0 +1,17 @@
+<h2>Eliminar Auxiliares</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let auxiliar of auxiliares">
+      <td>{{ auxiliar.nombre }} {{ auxiliar.apellido }}</td>
+      <td>
+        <button (click)="eliminarAuxiliar(auxiliar.id)">Eliminar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

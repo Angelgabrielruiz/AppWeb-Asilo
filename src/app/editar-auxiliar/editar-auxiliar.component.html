@@ -1,0 +1,15 @@
+<div *ngIf="auxiliar">
+    <h3>Editar Auxiliar</h3>
+    <form (ngSubmit)="actualizarAuxiliar()">
+      <label for="nombre">Nombre:</label>
+      <input id="nombre" [(ngModel)]="auxiliar.nombre" name="nombre" required />
+
+      <label for="apellido">Apellido:</label>
+      <input id="apellido" [(ngModel)]="auxiliar.apellido" name="apellido" required />
+
+      <label for="correo">Correo:</label>
+      <input id="correo" [(ngModel)]="auxiliar.correo" name="correo" required />
+
+      <button type="submit" [disabled]="!auxiliar.nombre || !auxiliar.apellido || !auxiliar.correo">Actualizar</button>
+    </form>
+</div>

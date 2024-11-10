@@ -1,0 +1,5 @@
+<h2>Lista de Pacientes</h2>
+<div *ngFor="let paciente of pacientes">
+  <p>{{ paciente.nombre }} {{ paciente.apellido }}</p>
+  <button (click)="seleccionarPaciente(paciente)">Editar</button>
+</div>

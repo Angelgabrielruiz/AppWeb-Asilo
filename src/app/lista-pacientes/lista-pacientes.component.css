@@ -1,0 +1,121 @@
+
+table {
+    width: 80%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeInTable 1s ease-out;
+    transition: transform 0.5s ease-in-out;
+    border: none; 
+  }
+  
+  
+  @keyframes fadeInTable {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  
+  thead {
+    background-color: #ff6347;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    animation: popIn 0.5s ease-out;
+  }
+  
+  
+  @keyframes popIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  th, td {
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 2px solid #ddd;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+
+  th:hover, td:hover {
+    background-color: #f5f5f5;
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  tbody tr:hover {
+    animation: waveEffect 1s ease-out;
+    background-color: #ffe0e0;
+  }
+  
+  
+  @keyframes waveEffect {
+    0% {
+      transform: scaleX(1);
+    }
+    50% {
+      transform: scaleX(1.05);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  
+  tbody tr {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  
+  tbody tr:hover {
+    transform: translateY(-5px);
+  }
+  
+  
+  button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  

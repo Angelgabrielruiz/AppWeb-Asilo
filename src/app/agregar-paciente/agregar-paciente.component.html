@@ -1,0 +1,30 @@
+
+<form (ngSubmit)="agregarPaciente()">
+  <h2>AGREGAR PACIENTE</h2>
+    <label>
+      Nombre:
+      <input type="text" [(ngModel)]="paciente.nombre" name="nombre" required />
+    </label>
+    <label>
+      Apellido:
+      <input type="text" [(ngModel)]="paciente.apellido" name="apellido" required />
+    </label>
+    <label>
+      Tipo de Sangre:
+      <input type="text" [(ngModel)]="paciente.tipo_sangre" name="tipo_sangre" required />
+    </label>
+    <label>
+      Alergias:
+      <input type="text" [(ngModel)]="paciente.alergias" name="alergias" />
+    </label>
+    <label>
+      Tutor:
+      <input type="text" [(ngModel)]="paciente.tutor" name="tutor" required />
+    </label>
+    <label>
+      Medicamentos:
+      <input type="text" [(ngModel)]="paciente.medicamentos" name="medicamentos" />
+    </label>
+    <button type="submit">Agregar Paciente</button>
+  </form>
+  

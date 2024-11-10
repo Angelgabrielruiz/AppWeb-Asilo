@@ -1,0 +1,15 @@
+<h2>Lista de Asignaciones</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Auxiliar</th>
+      <th>Paciente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let asignacion of asignaciones">
+      <td>{{ asignacion.auxiliar_nombre }} {{ asignacion.auxiliar_apellido }}</td>
+      <td>{{ asignacion.paciente_nombre }} {{ asignacion.paciente_apellido }}</td>
+    </tr>
+  </tbody>
+</table>

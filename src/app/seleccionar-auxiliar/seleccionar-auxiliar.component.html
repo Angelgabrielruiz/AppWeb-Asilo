@@ -1,0 +1,6 @@
+<h2>Lista de Auxiliares</h2>
+<div *ngFor="let auxiliar of auxiliares">
+  <p>{{ auxiliar.nombre }} {{ auxiliar.apellido }}</p>
+  <button (click)="seleccionarAuxiliar(auxiliar)">Editar</button>
+</div>
+

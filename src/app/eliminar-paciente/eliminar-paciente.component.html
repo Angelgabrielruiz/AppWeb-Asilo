@@ -1,0 +1,17 @@
+<h2>Eliminar Pacientes</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let paciente of pacientes">
+      <td>{{ paciente.nombre }}</td>
+      <td>
+        <button (click)="eliminarPaciente(paciente.id)">Eliminar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

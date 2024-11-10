@@ -1,0 +1,122 @@
+
+table {
+    width: 80%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+    transition: all 0.3s ease;
+  }
+  
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  thead {
+    background-color: #007BFF;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: slideIn 1s ease-out;
+  }
+  
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  
+  th, td {
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    transition: all 0.3s ease;
+  }
+  
+
+  th:hover, td:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+  }
+  
+  
+  button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    animation: buttonFadeIn 1.2s ease-out;
+  }
+  
+
+  @keyframes buttonFadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  button:hover {
+    background-color: #c82333;
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+
+  tbody tr {
+    animation: fadeInRow 0.5s ease-out;
+  }
+  
+  
+  @keyframes fadeInRow {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
